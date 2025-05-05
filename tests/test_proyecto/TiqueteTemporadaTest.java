@@ -1,4 +1,4 @@
-package Tests;
+package test_proyecto;
 
 public class TiqueteTemporadaTest {
 
