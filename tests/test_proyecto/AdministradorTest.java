@@ -1,5 +1,7 @@
 package test_proyecto;
 
+import static org.junit.Assert.assertThrows;
+import static org.junit.jupiter.api.Assertions.assertDoesNotThrow;
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
 import org.junit.jupiter.api.BeforeEach;
@@ -24,7 +26,8 @@ public class AdministradorTest {
     	Cocinero cocinero = new Cocinero("coci", "clave", 30, 1.75f, "chef");
 
         assertDoesNotThrow(() -> admin.AsignarTurno(cocinero, "mañana"));
-        assertEquals("mañana", cocinero.getTurnos());
+        assertEquals("mañana", cocinero.getTurnos().get(0));
+
     }
 
     @Test

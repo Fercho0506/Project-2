@@ -3,7 +3,6 @@ package consola;
 import java.util.Scanner;
 
 import LugarServicios.Cafeteria;
-import LugarServicios.LugarServicio;
 import Modelo.Parque;
 import Usuarios.Cajero;
 import Usuarios.Cocinero;

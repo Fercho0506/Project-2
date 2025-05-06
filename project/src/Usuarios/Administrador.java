@@ -23,9 +23,10 @@ public class Administrador extends Usuario{
 		if (labor.equals("cocina") && !empleado.gettipo().equals("cocinero")) {
 			throw new Exception("Solo los cocineros pueden estar en la cocina");
 		}
-		else if(labor.equals("caja") && (!empleado.gettipo().equals("cajero") || !empleado.gettipo().equals("cocinero")) ){
-			throw new Exception("Solo cocineros o cajeros pueden estar en caja");
+		else if(labor.equals("caja") && (!empleado.gettipo().equals("cajero") && !empleado.gettipo().equals("cocinero")) ){
+		    throw new Exception("Solo cocineros o cajeros pueden estar en caja");
 		}
+
 		else if (labor.equals("atraccion") && !empleado.gettipo().equals("empleadoAtracciones")) {
 			throw new Exception("Solo los empleados de atracciones pueden estar acargo de estas");
 		}
