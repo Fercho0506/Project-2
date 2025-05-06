@@ -1,6 +1,6 @@
 package test_proyecto;
 
-import static org.junit.jupiter.api.Assertions.*;
+import static org.junit.jupiter.api.Assertions.assertEquals;
 
 import org.junit.jupiter.api.Test;
 
@@ -29,5 +29,6 @@ public class TiqueteTemporadaTest {
 
         assertEquals("15-06", tiquete.getInicio());
         assertEquals("15-07", tiquete.getFin());
-    }
+    }
+
 }

@@ -1,6 +1,6 @@
 package test_proyecto;
 
-import static org.junit.jupiter.api.Assertions.*;
+import static org.junit.jupiter.api.Assertions.assertEquals;
 
 import org.junit.jupiter.api.Test;
 
@@ -22,5 +22,6 @@ public class TaquillaTest {
         taquilla.setNombre("Zona Sur");
 
         assertEquals("Zona Sur", taquilla.getNombre());
-    }
+    }
+
 }

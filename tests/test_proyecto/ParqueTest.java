@@ -1,6 +1,6 @@
 package test_proyecto;
 
-import static org.junit.jupiter.api.Assertions.*;
+import static org.junit.jupiter.api.Assertions.assertEquals;
 
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
@@ -87,11 +87,12 @@ public class ParqueTest {
         assertTrue(parque.usuarioAdministrador(user));
     }
 
-    @Test
+    @Test 
     public void testEliminarUsuario() throws Exception {
         Cliente cliente = new Cliente("luis", "qwerty", 30, 1.75f);
         parque.agregarUsuario(cliente);
         assertTrue(parque.eliminarUsuario(cliente));
         assertNull(parque.getUsuario("luis"));
-    }
+    }
+
 }
